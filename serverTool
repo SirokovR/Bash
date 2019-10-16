@@ -2,6 +2,8 @@
 date
 echo "uptime:"
 uptime 
+echo "Memory and Swap"
+free
 echo "Currently connected:"
 w 
 echo "-------------------------------------"
@@ -14,5 +16,10 @@ echo "uncomment and replace IP "
 echo "-------------------------------------"
 echo "Current connections:"
 ss -s 
+echo "-------------------------------------"
 echo "processes"
-ps -eF 
+echo "Uncomment based on need"
+#ps -eF 
+echo "-------------------------------------"
+echo "Richer processes"
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
