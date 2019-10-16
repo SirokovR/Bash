@@ -3,7 +3,7 @@ date
 echo "uptime:"
 uptime 
 echo "Memory and Swap"
-free
+free -h
 echo "Currently connected:"
 w 
 echo "-------------------------------------"
