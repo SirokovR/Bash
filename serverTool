@@ -9,7 +9,10 @@ echo "Last logins:"
 last  -F | head -4
 echo "-------------------------------------"
 echo "Open ports:"
-nmap -F 192.168.1.1
+echo "uncomment and replace IP "
+#nmap -F 192.168.1.1
 echo "-------------------------------------"
 echo "Current connections:"
 ss -s 
+echo "processes"
+ps -eF 
