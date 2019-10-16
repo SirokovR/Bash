@@ -8,5 +8,8 @@ echo "-------------------------------------"
 echo "Last logins:"
 last  -F | head -4
 echo "-------------------------------------"
-echo "Open TCP ports:"
+echo "Open ports:"
 nmap -F 192.168.1.1
+echo "-------------------------------------"
+echo "Current connections:"
+ss -s 
