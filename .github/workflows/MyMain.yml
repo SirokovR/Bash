@@ -9,10 +9,16 @@ on:
 jobs:
   my_testing:
 
-    runs-on: windows
+    runs-on: macos
     name: Test on Macos
     steps:
-      - run: aws --version
+      - run: pip3 install awscli --upgrade --user
+      - run: aws --version  
+  
+        
+      
+        
+        
     
 
         
