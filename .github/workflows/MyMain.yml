@@ -12,6 +12,8 @@ jobs:
     runs-on: macos
     name: Test on Macos
     steps:
+      - run: curl -O https://bootstrap.pypa.io/get-pip.py
+      - run: python3 get-pip.py --user
       - run: pip3 install awscli --upgrade --user
       - run: aws --version  
   
