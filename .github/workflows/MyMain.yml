@@ -9,7 +9,7 @@ on:
 jobs:
   my_testing:
 
-    runs-on: macos
+    runs-on: windows
     name: Test on Macos
     steps:
       - run: aws --version
