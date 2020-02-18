@@ -9,7 +9,7 @@ on:
 jobs:
   my_testing:
 
-    runs-on: [macos-latest]
+    runs-on: macos-latest
     name: Test on Macos
     steps:
       - run: aws --version
@@ -19,6 +19,7 @@ jobs:
         
         
   my_testing2:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
+    name: Test on Ubundu
     steps:
-      - 
+      - run: aws --version
