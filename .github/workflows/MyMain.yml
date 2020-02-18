@@ -1,0 +1,23 @@
+name: MyMainGitHub
+
+on: 
+  push:
+    branches: 
+      - master
+
+
+jobs:
+  my_testing:
+
+    runs-on: [macos-latest]
+
+    steps:
+      -name: Test AWK Macos
+      -run: aws --version
+    
+        
+        
+  my_testing2:
+    runs-on: [ubuntu-latest]
+    steps:
+      - 
