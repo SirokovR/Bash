@@ -10,11 +10,12 @@ jobs:
   my_testing:
 
     runs-on: [macos-latest]
-
+    name: Test on Macos
     steps:
-      -name: Test AWK Macos
-      -run: aws --version
+      - run: aws --version
     
+
+        
         
         
   my_testing2:
